@@ -1,0 +1,29 @@
+<!-- 如: "# 应用程序图标规范" -->
+# ${标题}
+
+<!-- 请在使用时替换具体的信息 -->
+* 维护者：zccrs <zhangjide@uniontech.com>
+* 版本：1.0
+* 修改日期：2021.1.1
+* 议题：https://gitlabwh.uniontech.com/wuhan/se/deepin-specifications/-/issues/5
+
+## 引言
+
+<!-- 此处应给出此规范的背景说明 -->
+
+## XX设计
+
+<!--  针对设计1的描述 -->
+
+## XX设计
+
+<!-- 针对设计2的描述 -->
+
+## XX设计
+
+<!-- 针对设计3的描述 -->
+
+## 参考
+
+<!-- 如: "* freedesktop图标主题: https://www.freedesktop.org/" -->
+* ${名称}：${URL}
