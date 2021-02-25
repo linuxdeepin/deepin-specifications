@@ -5,7 +5,7 @@
 * 维护者：zccrs <zhangjide@uniontech.com>
 * 版本：1.0
 * 修改日期：2021.1.1
-* 议题：https://gitlabwh.uniontech.com/wuhan/se/deepin-specifications/-/issues/5
+* 议题：#5
 
 ## 引言
 
