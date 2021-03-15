@@ -1,8 +1,16 @@
-# deepin规范
+# deepin 规范
 
 `规范`是一种约定，对应的英文单词是 `Specifications`，为实现方和使用方提供了一个对接的桥梁，就像螺丝和螺母，虽然是两个独立的个体，但是如果他们都遵守同一个约定进行生产，那任意一颗螺母都能和一颗螺丝一起使用。开源社区有很多历史悠久的制定规范的组织，如：[freedesktop]( https://www.freedesktop.org )、[Khronos]( https://www.khronos.org/ )，deepin 也使用并实现了其中的一部分规范，如 freedesktop 制定的图标查找规范。
 
 deepin 规范包含了 deepin/UOS 系统定义的所有规范文档，用于指导操作系统的开发者实现各种系统功能，同时也规定了应用程序应当如何使用这些系统功能。规范文档使用 markdown 格式的文件编写，覆盖了操作系统各个方面的设计，如“软件包格式“、“应用程序图标格式“等。
+
+# DSG 组织
+
+本组织全名为：“Desktop Specifications Group”，是一个致力于为 UOS 和 deepin 制定系统规范的工作组。此项目的所有规范文档均以 `SDG` 的名义发布，编写文档时，需要遵守以下规则：
+
+* 标准中定义的环境变量需要以 “DSG\_” 开头，如：“DSG_APP_DATA”
+* 与 DBus 接口相关的标准，需要以 “org.dsg.” 作为服务名的开头，如：“org.dsg.AppManager”
+* 标准中任意需要明确组织身份的地方都使用 “DSG” 或 “dsg” 表示
 
 # 目录结构
 
