@@ -47,8 +47,9 @@ deepin 规范包含了 deepin/UOS 系统定义的所有规范文档，用于指�
 对于规范文档中给出的 DBus 接口设计，需要满足以下规则：
 
 * 遵守 [DSG 组织](#dsg-组织) 中的要求
-* 需提供获取“所实现的规范文档的版本号”的 DBus 属性。如：实现规范 A 中定义的 “org.dsg.A” 服务时，需要提供 “org.dsg.A.version” 属性，类型为 “s”，值为所实现的规范文档版本号
-* 实现 stable 状态的规范时，需要额外提供在名称末尾添加此规范的主版本号的服务。如：规范 A 的版本为 “2.1”，实现 A 中定义的 “org.dsg.A” 服务时，需要同时提供 “org.dsg.A” 和 “org.dsg.A2” 两个服务，且它们的功能和行为保持一致
+* 需提供获取“所实现的规范文档的版本号”的 DBus 属性。如：实现规范 A 中定义的 “org.desktopspec.A” 服务时，需要提供 “org.desktopspec.A.version” 属性，类型为 “s”，值为所实现的规范文档版本号
+* 实现 stable 状态的规范时，需要额外提供在名称末尾添加此规范的主版本号的服务（路径和接口名称也需要同步添加版本号后缀）。如：规范 A 的版本为 “2.1”，实现 A 中定义的 “org.desktopspec.A” 服务时，需要同时提供 “org.desktopspec.A” 和 “org.desktopspec.A2” 两个服务，且它们的功能和行为保持一致
+* 其它规范可参考：[DBus API 设计](https://dbus.freedesktop.org/doc/dbus-api-design.html)
 
 # 文件内容
 
@@ -68,7 +69,7 @@ deepin 规范包含了 deepin/UOS 系统定义的所有规范文档，用于指�
 # 将unstable转为stable状态
 
 * 需移除文档开头的警告信息
-* 需将规范中定义的 DBus 服务改名，在其尾部添加规范的主版本号。如：规范 A 的版本为 “2.1”，在 unstable 状态时定义的服务名称为 “org.dsg.A”，则改名之后为 “org.dsg.A2”
+* 需修改规范中定义的 DBus 服务名、路径、接口名，在其尾部添加规范的主版本号。如：规范 A 的版本为 “2.1”，在 unstable 状态时定义的服务名称为 “org.desktopspec.A”，则改名之后为 “org.desktopspec.A2”，路径和接口名同上
 * 需将规范对应的md文件从 [unstable](unstable) 目录移动到 [stable](stable)，并为此创建一个 PR
 * 至少需要四名SE团队成员的同意，并且没有任何一名成员明确反对，才可以合入相关 PR
 * unstable 规范在发布的六个月之内不可转为 stable 状态
