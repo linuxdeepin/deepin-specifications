@@ -6,11 +6,12 @@ deepin 规范包含了 deepin/UOS 系统定义的所有规范文档，用于指�
 
 # DSG 组织
 
-本组织全名为：“Desktop Specifications Group”，是一个致力于为 UOS 和 deepin 制定系统规范的工作组。此项目的所有规范文档均以 `SDG` 的名义发布，编写文档时，需要遵守以下规则：
+本组织全名为：“Desktop Specifications Group”，是一个致力于为 UOS 和 deepin 制定系统规范的工作组，域名为 `desktopspec.org`。此项目的所有规范文档均以 `SDG` 的名义发布，编写文档时，需要遵守以下规则：
 
-* 标准中定义的环境变量需要以 “DSG\_” 开头，如：“DSG_APP_DATA”
-* 与 DBus 接口相关的标准，需要以 “org.dsg.” 作为服务名的开头，如：“org.dsg.AppManager”
-* 标准中任意需要明确组织身份的地方都使用 “DSG” 或 “dsg” 表示
+* 规范中定义的环境变量需要以 “DSG\_” 开头，如：“DSG_APP_DATA”，且要明确说明此变量是否被强制依赖（必须提供有效的值）
+* 与 DBus 接口相关的规范，需要以 “org.desktopspec.” 作为服务名的开头，如：“org.desktopspec.AppManager”
+* 规范中任意需要明确组织身份的地方都使用 “DSG” 或 “dsg” 表示
+* 除 “DSG” 以外，规范文档中不应该出现与某个组织/操作系统相关的定义，如不可将 “deepin/UOS” 用于环境变量、DBus 服务名称等地方
 
 # 目录结构
 
@@ -39,6 +40,7 @@ deepin 规范包含了 deepin/UOS 系统定义的所有规范文档，用于指�
 * 新规范要考虑对业界已有规范的兼容性
 * 规范中包含的 DBus 接口请提供完整的 xml 描述文件内容
 * 可以使用伪代码作为辅助描述的手段
+* 所定义的规范文件路径禁止使用绝对路径，需定义环境变量，将其作为顶层目录。如 “$DSG\_DATA\_DIR/appdata“，如果系统中需要将此目录对应为 “/foo/appdata”，则应该设置 “DSG\_DATA\_DIR=/foot”
 
 # DBus 服务
 
