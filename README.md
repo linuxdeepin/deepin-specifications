@@ -1,4 +1,4 @@
-# deepin 规范
+# 简介
 
 `规范`是一种约定，对应的英文单词是 `Specifications`，为实现方和使用方提供了一个对接的桥梁，就像螺丝和螺母，虽然是两个独立的个体，但是如果他们都遵守同一个约定进行生产，那任意一颗螺母都能和一颗螺丝一起使用。开源社区有很多历史悠久的制定规范的组织，如：[freedesktop]( https://www.freedesktop.org )、[Khronos]( https://www.khronos.org/ )，deepin 也使用并实现了其中的一部分规范，如 freedesktop 制定的图标查找规范。
 
