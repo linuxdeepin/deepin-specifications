@@ -6,7 +6,7 @@ deepin 规范包含了 deepin/UOS 系统定义的所有规范文档，用于指�
 
 # DSG 组织
 
-本组织全名为：“Desktop Specifications Group”，是一个致力于为 UOS 和 deepin 制定系统规范的工作组，域名为 `desktopspec.org`。此项目的所有规范文档均以 `SDG` 的名义发布，编写文档时，需要遵守以下规则：
+本组织全名为：“Desktop Specifications Group”，是一个致力于为 UOS 和 deepin 制定系统规范的工作组，域名为 `desktopspec.org`。此项目的所有规范文档均以 `DSG` 的名义发布，编写文档时，需要遵守以下规则：
 
 * 规范中定义的环境变量需要以 “DSG\_” 开头，如：“DSG_APP_DATA”，且要明确说明此变量是否被强制依赖（必须提供有效的值）
 * 与 DBus 接口相关的规范，需要以 “org.desktopspec.” 作为服务名的开头，如：“org.desktopspec.AppManager”
